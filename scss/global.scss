@@ -1,0 +1,951 @@
+
+/***********************   Header   *****************************/
+
+body {
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  display: block;
+
+
+  .header {
+    &__wrapper {
+      width: 100%;
+      height: 75px;
+      background-color: #fafdff;
+      position: relative;
+      box-shadow: 0 1px 6px rgba(0, 0, 0, .18);
+      &_line {
+        width: 1000px;
+        height: 100%;
+        position: relative;
+        padding: 0;
+        margin: 0 auto;
+        &:before {
+          width: 0;
+          height: 0;
+          border-style: solid;
+          border-width: 20px 20px 0 20px;
+          border-color: #fafdff transparent transparent transparent;
+          position: absolute;
+          content: '';
+          top: 100%;
+          left: 183px;
+        }
+
+        .shadow{
+          position: absolute;
+          margin-top: 68px;
+          margin-left: 38px;
+          z-index: -1;
+        }
+
+        .mackeeper-logo {
+          background: url(../images/logo.png);
+          width: 135px;
+          height: 30px;
+          float: left;
+          display: block;
+          background-size: 100%;
+          background-repeat: no-repeat;
+          margin: 20px 0 0 0;
+        }
+
+        .title {
+          font-family: "Open sans", sans-serif;
+          font-weight: 300;
+          text-align: center;
+          color: #5c5c5c;
+          font-size: 36px;
+          margin-top: 12px;
+          margin-left: 117px;
+          display: inline-block;
+
+          &__border {
+            height: 53px;
+            width: 42px;
+            border: 2px solid #17b5fe;
+            -webkit-border-radius: 9px;
+            border-radius: 9px;
+            padding: 0 8px
+          }
+        }
+      }
+    }
+  }
+/***********************   Steps and Photo    *****************************/
+
+  .steps-and-awards{
+  width:100%;
+
+    .steps-and-photo{
+      width: 1000px;
+      height: 350px;
+      position: relative;
+      margin: 0 auto;
+      padding: 0;
+
+      &__steps{
+        width: 387px;
+        height: 350px;
+        margin: 0;
+        padding: 0;
+        float: left;
+
+          &_wrapper{
+            width: 387px;
+            position: relative;
+            margin-top: 60px;
+            padding: 0;
+            float: left;
+
+            .steps-blocks{
+              width: 385px;
+              height: 71px;
+              border: 1px solid #dde3e7;
+              margin-bottom: 20px;
+
+              &__icon{
+                margin-top: 22px;
+                margin-left: 13px;
+                display: inline-block;
+                position: absolute;
+              }
+
+             .step-one{
+               background: url(../images/icon1.png);
+               width: 25px;
+               height: 25px;
+             }
+
+              .step-two{
+                background: url(../images/icon2.png);
+                width: 34px;
+                height: 23px;
+              }
+
+              .step-three{
+                background: url(../images/icon3.png);
+                width: 25px;
+                height: 25px;
+              }
+
+              &__text{
+                margin: 22px 0 0 66px;
+                padding: 0;
+                font-size: 18px;
+                font-family: "Open sans", sans-serif;
+                font-weight: 300;
+                list-style: none;
+                display: inline-block;
+              }
+
+              &__description{
+                  margin: 22px 0 0 15px;
+                  padding: 0;
+                  font-size: 18px;
+                  font-family: "Open sans", sans-serif;
+                  font-weight: 300;
+                  list-style: none;
+                  display: inline-block;
+                  position: absolute;
+
+                &_link{
+                  text-decoration: none;
+                  color: #00aaff;
+                }
+              }
+            }
+          }
+        }
+        &__photo{
+          width: 613px;
+          height: 330px;
+          margin-top: 20px;
+          padding: 0;
+          float: right;
+          background: url(../images/mac-gif3.gif);
+        }
+      }
+
+    .download-and-awards{
+      width: 1000px;
+      height: 145px;
+      margin: 0 auto;
+      padding: 0;
+
+      &__button{
+          width: 390px;
+          height: 80px;
+          padding: 0;
+          margin: 0;
+          display: inline-block;
+
+        &_download{
+          height: 80px;
+          -webkit-border-radius: 4px;
+          border-radius: 4px;
+          background-color: #1db4f9;
+          -webkit-box-shadow: 0 1px #1b8bbf;
+          box-shadow: 0 1px #1b8bbf;
+          text-transform: uppercase;
+          line-height: 80px;
+          color: #fff;
+          text-decoration: none;
+          font-size: 20px;
+          font-weight: 600;
+          font-family: "Open sans", sans-serif;
+          display: block;
+          width: 388px;
+          text-align: center;
+
+          &:hover{
+            background-color: #009cff;
+          }
+          .download-arrow{
+            display: block;
+            float: right;
+            width: 43px;
+            height: 43px;
+            margin: 20px 20px 0 -30px;
+            background: url(../images/arrowOnButton.png) 0 0 no-repeat;
+            background-size: 100%;
+          }
+        }
+
+        &_link-under-button{
+          font-family: 'Arial', sans-serif;
+          font-size: 13px;
+          line-height: 36px;
+          text-align: center;
+          color: #08a5ee;
+          text-decoration: underline;
+          margin-top: 15px;
+          margin-left: 117px;
+        }
+      }
+
+      &__awards{
+        margin: 0;
+        padding: 0;
+        float: right;
+        width: 600px;
+        height: 145px;
+        display: inline-block;
+
+        &_number-of-downloads{
+          background: url(../images/downloads.png);
+          background-repeat: no-repeat;
+          width: 206px;
+          height: 58px;
+          display: inline-block;
+          margin-top: 26px;
+          margin-left: 113px;
+        }
+
+        &_shopper-approved{
+          background: url(../images/shopperApproved.png);
+          background-repeat: no-repeat;
+          width: 108px;
+          height: 52px;
+          display: inline-block;
+          margin-top: 26px;
+          margin-left: 42px;
+        }
+      }
+    }
+}
+
+/***********************   Row with trust   *****************************/
+
+  .trust{
+  width: 100%;
+  border-top: 1px #f1f7fa solid;
+  display: inline-block;
+
+  &__wrapper{
+    width: 1000px;
+    margin: auto;
+    padding: 0;
+    position: relative;
+
+    &_list{
+      padding: 30px 0 20px 130px;
+      display: inline-block;
+
+      .cnn{
+        margin-right: 100px;
+        width: 67px;
+        height: 39px;
+        background: url(../images/cnn.png);
+        background-repeat: no-repeat;
+
+        &:hover{
+          background: url(../images/Cnn_hover.png);
+          background-repeat: no-repeat;
+          transition: .5s;
+          background-size: 100%;
+          background-position: center;
+        }
+      }
+
+      .dezzain{
+        margin-right: 78px;
+        width: 143px;
+        height: 39px;
+        background: url(../images/logo-dezzain.png);
+        background-repeat: no-repeat;
+
+        &:hover {
+          background: url(../images/dezzain-hover.png);
+          background-repeat: no-repeat;
+          background-size: 100%;
+          transition: .5s;
+          background-position: center;
+        }
+      }
+
+      .forbes{
+        margin-right: 87px;
+        width: 109px;
+        height: 39px;
+        background: url(../images/Forbes_logo.svg.png);
+        background-repeat: no-repeat;
+          &:hover {
+            background: url(../images/Forbes_hover.png);
+            background-size: 100%;
+            background-repeat: no-repeat;
+            transition: .5s;
+            background-position: center;
+          }
+      }
+
+      .machmachines{
+        width: 149px;
+        height: 39px;
+        background: url(../images/logo_machines.png);
+        background-repeat: no-repeat;
+          &:hover {
+            background: url(../images/logo_hover.png);
+            background-size: 100%;
+            background-repeat: no-repeat;
+            transition: .5s;
+            background-position: center;
+          }
+      }
+
+      .trust-logo{
+        display: inline-block;
+        background-size: 100%;
+        transition: .5s;
+        background-repeat: no-repeat;
+        background-position: center;
+        cursor: pointer;
+        float: left;
+      }
+
+    }
+  }
+}
+
+/***********************   Block with icons   *****************************/
+
+  .block-with-icons{
+  position: relative;
+  width: 100%;
+  background: #f1f7fa;
+  padding: 0 0 70px 0;
+  margin: 0;
+  display: inline-block;
+
+  &__heading{
+    font-size: 24px;
+    font-family: "Proxima Nova",sans-serif;
+    line-height: 24px;
+    margin: 0;
+    text-align: center;
+    padding: 30px 0 0 0;
+    font-weight: 300;
+
+      &_blue{
+        color: #00aaff;
+      }
+    }
+
+  &__wrapper{
+    width: 1000px;
+    margin: 0 auto;
+    padding: 50px 0 0 0;
+
+    &_icons{
+      width: 720px;
+      position: relative;
+      float: left;
+      display: inline-block;
+
+      ul{
+        padding: 0;
+      }
+
+      .first-row, .second-row, .third-row{
+        cursor: pointer;
+
+        .js-hexagon-selected{
+          position: relative;
+          width: 93px;
+          height: 55px;
+          background-color: #ffffff;
+          margin: 28px 15px 0 0;
+          display: inline-block;
+          border-left: solid 1px #00a8d1;
+          border-right: solid 1px #00a8d1;
+          z-index: 1;
+
+          &:before {
+            top: -34px;
+            border-top: solid 1px #00a8d1;
+            border-right: solid 1px #00a8d1;
+          }
+
+          &:after{
+            bottom: -34px;
+            border-bottom: solid 1px #00a8d1;
+            border-left: solid 1px #00a8d1;
+          }
+        }
+
+        &__hexagon{
+          position: relative;
+          width: 93px;
+          height: 55px;
+          background-color: #ffffff;
+          margin: 28px 15px 0 0;
+          display: inline-block;
+          border-left: solid 1px #d1d1d1;
+          border-right: solid 1px #d1d1d1;
+          z-index: 1;
+
+          &:before, &:after{
+            content: "";
+            position: absolute;
+            z-index: 0;
+            width: 67px;
+            height: 67px;
+            -webkit-transform: scaleY(0.5774) rotate(-45deg);
+            -ms-transform: scaleY(0.5774) rotate(-45deg);
+            transform: scaleY(0.5774) rotate(-45deg);
+            background-color: #ffffff;
+            left: 13px;
+          }
+          &::before {
+            top: -34px;
+            border-top: solid 1px #d1d1d1;
+            border-right: solid 1px #d1d1d1;
+          }
+          &:after {
+            bottom: -34px;
+            border-bottom: solid 1px #d1d1d1;
+            border-left: solid 1px #d1d1d1;
+          }
+
+          &_support{
+            background: url(../images/icons/human.png);
+          }
+
+          &_security{
+            background: url(../images/icons/security.png);
+          }
+
+          &_anti-theft{
+            background: url(../images/icons/theft.png);
+          }
+
+          &_cleaning{
+            background: url(../images/icons/scan.png);
+          }
+
+          &_duplicates{
+            background: url(../images/icons/duplicate.png);
+          }
+
+          &_geeks{
+            background: url(../images/icons/geenk.png);
+          }
+
+          &_update{
+            background: url(../images/icons/update.png);
+          }
+
+
+          &_backup{
+            background: url(../images/icons/backup.png);
+          }
+
+          &_recovery{
+            background: url(../images/icons/filesrecovery.png);
+          }
+
+          &_pic{
+            background: url(../images/icons/pic.png);
+          }
+
+          &_uninstaller{
+            background: url(../images/icons/uninstaller.png);
+          }
+
+          &_encrypt{
+            background: url(../images/icons/encription.png);
+          }
+
+          &_default{
+            background: url(../images/icons/defaultapps.png);
+          }
+
+          &_shredd{
+            background: url(../images/icons/shredder.png);
+          }
+
+          &_finder{
+            background: url(../images/icons/finder.png);
+          }
+
+          &_loginitems{
+            background: url(../images/icons/login.png);
+          }
+
+          &_mcleaner{
+            background: url(../images/icons/memorycleaner.png);
+          }
+
+          &_icon{
+            width: 50px;
+            height: 50px;
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: auto;
+            z-index: 2;
+            display: block;
+            position: absolute;
+            margin: 2px 0 0 22px;
+          }
+        }
+      }
+
+      .first-row{
+        margin: 0 0 0 17px;
+      }
+
+      .second-row{
+        padding: 15px 0 0 72px;
+      }
+
+      .third-row{
+        padding: 15px 0 0 17px;
+      }
+    }
+  }
+}
+
+
+
+
+  .feature-descr{
+  width: 280px;
+  padding: 0;
+  float: right;
+  display: inline-block;
+
+  &__name{
+    width: 278px;
+    height: 138px;
+    background-color: #f8fafb;
+    border: 1px solid #dbdbdb;
+    display: block;
+    border-top-left-radius: 6px;
+    border-top-right-radius: 6px;
+    position: relative;
+    padding: 0;
+    margin: 0;
+
+    &_support{
+      background: url(../images/icons/human.png) 0 0;
+    }
+
+    &_security{
+      background: url(../images/icons/security.png);
+    }
+
+    &_anti-theft{
+      background: url(../images/icons/theft.png);
+    }
+
+    &_cleaning{
+      background: url(../images/icons/scan.png);
+    }
+
+    &_duplicates{
+      background: url(../images/icons/duplicate.png);
+    }
+
+    &_geeks{
+      background: url(../images/icons/geenk.png);
+    }
+
+    &_update{
+      background: url(../images/icons/update.png);
+    }
+
+    &_backup{
+      background: url(../images/icons/backup.png);
+    }
+
+    &_recovery{
+      background: url(../images/icons/filesrecovery.png);
+    }
+
+    &_pic{
+      background: url(../images/icons/pic.png);
+    }
+
+    &_uninstaller{
+      background: url(../images/icons/uninstaller.png);
+    }
+
+    &_encrypt{
+      background: url(../images/icons/encription.png);
+    }
+
+    &_default{
+      background: url(../images/icons/defaultapps.png);
+    }
+
+    &_shredd{
+      background: url(../images/icons/shredder.png);
+    }
+
+    &_finder{
+      background: url(../images/icons/finder.png);
+    }
+
+    &_loginitems{
+      background: url(../images/icons/login.png);
+    }
+
+    &_mcleaner{
+      background: url(../images/icons/memorycleaner.png);
+    }
+
+    &_feature-icon{
+      width: 75px;
+      height: 90px;
+      display: block;
+      background-repeat: no-repeat;
+      padding: 10px 0 0 0;
+      background-position: center;
+      background-size: 70%;
+      margin: auto;
+    }
+
+    &_feature-name{
+      margin: 0;
+      padding: 10px 0 0 0;
+      font-size: 14px;
+      font-family: "Open sans", sans-serif;
+      font-weight: 200;
+      display: block;
+      text-align: center;
+      line-height: 14px;
+      text-transform: uppercase;
+    }
+  }
+
+  &__text{
+    width: 278px;
+    height: 267px;
+    margin: 0;
+    padding: 0;
+    background: #ffffff;
+    border: 1px solid #dbdbdb;
+    display: block;
+    border-bottom-left-radius: 6px;
+    border-bottom-right-radius: 6px;
+    border-top: 1px solid #ffffff;
+    position: relative;
+
+    &_content{
+      padding: 34px 20px 0 20px;
+      font-size: 14px;
+      height: 166px;
+      font-family: "Open sans", sans-serif;
+      font-weight: 100;
+      line-height: 22px;
+      display: block;
+      text-align: center;
+      color: #737373;
+      letter-spacing: -0.5px;
+      margin: 0;
+    }
+
+    &_download{
+      padding: 10px 30px;
+      border-radius: 4px;
+      background-color: #ffffff;
+      color: #2bb0ff;
+      text-decoration: none;
+      font-size: 14px;
+      font-weight: 600;
+      font-family: "Open sans", sans-serif;
+      width: 115px;
+      text-align: center;
+      border: solid 1px #00abff;
+      margin: auto;
+      display: block;
+    }
+  }
+}
+
+
+/***********************   Customer reviews   *****************************/
+
+  .customer-reviews{
+  height: 393px;
+  width: 100%;
+  background-color: #ffffff;
+  padding: 0;
+  margin: 0;
+  position: relative;
+  border-bottom: 1px solid #e9e9e9;
+
+  &__wrapper{
+    width: 1000px;
+    height: 393px;
+    position: relative;
+    margin: 0 auto;
+    padding: 0;
+
+    &_box{
+      padding: 40px 15px;
+      position: relative;
+      display: inline-block;
+      width: 295px;
+      height: 240px;
+
+      .review-rating{
+        width: 310px;
+        height: 146px;
+        background-color: #ffffff;
+        border: 1px solid #dbdbdb;
+        border-top-left-radius: 6px;
+        border-top-right-radius: 6px;
+        position: relative;
+        padding: 0;
+        margin: 0;
+
+        &__stars{
+          width: 95px;
+          height: 15px;
+          background: url(../images/stars.png);
+          margin: 21px 0 0 27px;
+          display: block;
+          background-repeat: no-repeat;
+        }
+
+        &__review{
+          margin: 10px 28px 0 28px;
+          color: #737373;
+          font-size: 12pt;
+          line-height: 15pt;
+          font-family: "Open sans", sans-serif;
+          font-weight: 100;
+          letter-spacing: -0.5px;
+        }
+      }
+
+      .customer{
+        height: 90px;
+        width: 310px;
+        margin: 0;
+        padding: 0;
+        background: #ffffff;
+        border: 1px solid #dbdbdb;
+        border-bottom-left-radius: 6px;
+        border-bottom-right-radius: 6px;
+        border-top: 1px solid #ffffff;
+        position: relative;
+
+        &__name{
+            margin: 15px 28px 0 28px;
+            color: #737373;
+            font-size: 10pt;
+            line-height: 15pt;
+            font-family: "Open sans", sans-serif;
+            font-weight: 100;
+            letter-spacing: -0.5px;
+        }
+      }
+    }
+  }
+}
+
+/***********************   Customer reviews END   *****************************/
+
+/***/
+
+/***********************   Download and awards | Below block   *****************************/
+
+.download-and-awards-below{
+  width: 100%;
+  background-color: #ffffff;
+  padding: 0;
+  margin: 0;
+  position: relative;
+  border-bottom: 1px solid #e9e9e9;
+
+  &__wrapper{
+    width: 1000px;
+    height: 185px;
+    position: relative;
+    margin: 0 auto;
+    padding: 0;
+
+    &_trust{
+      background: url(../images/systemutility.png);
+      width: 117px;
+      height: 83px;
+      display: block;
+      position: absolute;
+      background-repeat: no-repeat;
+      top: 40px;
+      left: 90px;
+    }
+
+    &_button{
+      width: 390px;
+      height: 80px;
+      padding: 0;
+      top: 40px;
+      left: 307px;
+      display: inline-block;
+      position: absolute;
+
+      .download{
+        height: 80px;
+        -webkit-border-radius: 4px;
+        border-radius: 4px;
+        background-color: #1db4f9;
+        -webkit-box-shadow: 0 1px #1b8bbf;
+        box-shadow: 0 1px #1b8bbf;
+        text-transform: uppercase;
+        line-height: 80px;
+        color: #fff;
+        text-decoration: none;
+        font-size: 20px;
+        font-weight: 600;
+        font-family: "Open sans", sans-serif;
+        display: block;
+        width: 388px;
+        text-align: center;
+
+        &:hover{
+          background-color: #009cff;
+        }
+        &__arrow{
+          display: block;
+          float: right;
+          width: 43px;
+          height: 43px;
+          margin: 20px 20px 0 -30px;
+          background: url(../images/arrowOnButton.png) 0 0 no-repeat;
+          background-size: 100%;
+        }
+      }
+
+      .download-text{
+        font-family: 'Arial', sans-serif;
+        font-size: 13px;
+        line-height: 36px;
+        text-align: center;
+        color: #08a5ee;
+        text-decoration: underline;
+        margin-top: 15px;
+        margin-left: 117px;
+      }
+    }
+
+    &_map{
+      background: url(../images/map.png);
+      width: 208px;
+      height: 100px;
+      display: inline-block;
+      background-repeat: no-repeat;
+      top: 40px;
+      left: 768px;
+      position: absolute;
+    }
+  }
+}
+
+
+
+
+
+/***********************   Download and awards | Below block END   *****************************/
+
+/***/
+
+/***********************   Footer   *****************************/
+
+  footer {
+    text-align: center;
+    width: 100%;
+    background-color: #f4fafd;
+
+    .block-with-links {
+      border-bottom: 1px solid #e1e3e4 !important;
+      background-color: #fafdff;
+
+      .footer {
+        width: 1000px;
+        display: block;
+        margin: auto;
+
+        &__links-wrapper {
+          display: block;
+          height: 50px;
+
+          &_link {
+            display: inline;
+            font-family: "Open sans", sans-serif;
+            margin: 0 5px;
+            font-size: 11px;
+            line-height: 50px;
+            color: #171717;
+            text-decoration: none
+          }
+        }
+      }
+    }
+
+    .legal{
+      font-size: 11px;
+      line-height: 20px;
+      color: #4f4f4f;
+      padding: 0 0 0;
+      background-color: #f4fafd;
+      font-family: "Open sans", sans-serif;
+
+      &__link{
+        color: #17b5fe;
+        font-size: 11px
+      }
+    }
+
+    .copy{
+      font-family: "Open sans", sans-serif;
+      font-size: 11px;
+      line-height: 18px;
+      color: #999;
+      padding: 0 0 0;
+    }
+  }
+}
