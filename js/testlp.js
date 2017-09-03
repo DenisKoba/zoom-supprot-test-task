@@ -1,10 +1,10 @@
 $(document).ready(function(){
     /*var onClickSetTimeoutID;*/
-    function activateHexagons(currentElement){
-        var currentHexagon = $(currentElement).attr('data-id');
+    function activateHexagons(n){
+        var currentHexagon = $(n).attr('data-id');
 
         $('li').removeClass('js-hexagon-selected');
-        $(currentElement).addClass('js-hexagon-selected');
+        $(n).addClass('js-hexagon-selected');
         $('.js-hex-text').hide();
         $('.js-hex-descr').hide();
         $('.js-hex-text[data-id="'+currentHexagon+'"]').show();
@@ -22,7 +22,7 @@ $(document).ready(function(){
 
     });
 
-    /*$(function() {
+    $(function() {
         var i = 0;
         var $target = $('.js-hexagon');
         onClickSetTimeoutID = setInterval(function(){
@@ -33,8 +33,8 @@ $(document).ready(function(){
             } else {
                 i++;
             }
-        }, 1000);
-    });*/
+        }, 4000);
+    });
 });
 
 
